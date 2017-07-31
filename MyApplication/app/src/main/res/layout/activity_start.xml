@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/startbackground"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="  欢迎使用智慧校园服务平台"
+            android:textSize="25dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="222dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="请选择进入的模块，查看相关话题或者发布自己的内容"
+                android:textSize="17dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="297dp"
+        android:layout_weight="0.66">
+
+        <Button
+            android:id="@+id/btn_to_learn1"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_alignEnd="@+id/btn_to_envir1"
+            android:layout_alignLeft="@+id/btn_to_envir1"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/btn_to_envir1"
+            android:layout_alignStart="@+id/btn_to_envir1"
+            android:layout_marginTop="22dp"
+            android:layout_weight="120"
+            android:background="@drawable/learn" />
+
+        <Button
+            android:id="@+id/btn_to_envir1"
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="47dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_weight="0.30"
+            android:background="@drawable/school" />
+
+        <Button
+            android:id="@+id/btn_to_setting1"
+            android:layout_width="wrap_content"
+            android:layout_height="157dp"
+            android:layout_alignBottom="@+id/btn_to_envir1"
+            android:layout_alignEnd="@+id/btn_to_act1"
+            android:layout_alignLeft="@+id/btn_to_act1"
+            android:layout_alignRight="@+id/btn_to_act1"
+            android:layout_alignStart="@+id/btn_to_act1"
+            android:layout_alignTop="@+id/btn_to_envir1"
+            android:layout_weight="0.79"
+            android:background="@drawable/setting" />
+
+        <Button
+            android:id="@+id/btn_to_act1"
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:layout_alignBottom="@+id/btn_to_learn1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="29dp"
+            android:layout_weight="0.49"
+            android:background="@drawable/activity" />
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/btn_to_learn1"
+            android:layout_alignLeft="@+id/btn_to_learn1"
+            android:layout_alignRight="@+id/btn_to_learn1"
+            android:layout_alignStart="@+id/btn_to_learn1"
+            android:layout_below="@+id/btn_to_learn1"
+            android:gravity="center"
+            android:ems="10"
+            android:text="学习"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_alignEnd="@+id/btn_to_act1"
+            android:layout_alignLeft="@+id/btn_to_act1"
+            android:layout_alignRight="@+id/btn_to_act1"
+            android:layout_alignStart="@+id/btn_to_act1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:ems="10"
+            android:text="活动"
+            android:gravity="center"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:text="校园环境"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_alignBaseline="@+id/editText5"
+            android:layout_alignBottom="@+id/editText5"
+            android:layout_alignLeft="@+id/btn_to_envir1"
+            android:layout_alignStart="@+id/btn_to_envir1"
+            android:layout_alignRight="@+id/btn_to_envir1"
+            android:layout_alignEnd="@+id/btn_to_envir1" />
+
+        <TextView
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/btn_to_setting1"
+            android:layout_alignLeft="@+id/btn_to_setting1"
+            android:layout_alignRight="@+id/btn_to_setting1"
+            android:layout_alignStart="@+id/btn_to_setting1"
+            android:layout_below="@+id/btn_to_setting1"
+            android:ems="10"
+            android:text="个人设置"
+            android:gravity="center"
+            android:textSize="25dp" />
+    </RelativeLayout>
+</LinearLayout>

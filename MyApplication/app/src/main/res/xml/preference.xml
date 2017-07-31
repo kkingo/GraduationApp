@@ -1,0 +1,56 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <PreferenceCategory
+            android:title="@string/pref_header_imformation"
+            android:key="personal_imformation">
+            <EditTextPreference
+                android:inputType="number"
+                android:key="students_name"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="@string/pref_title_display_name" />
+            <EditTextPreference
+                android:capitalize="words"
+                android:inputType="number"
+                android:key="students_gender"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="@string/pref_title_display_gender" />
+
+            <EditTextPreference
+                android:defaultValue="@string/pref_default_display_age"
+                android:inputType="number"
+                android:key="students_age"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="@string/pref_title_display_age" />
+
+            <EditTextPreference
+                android:inputType="text"
+                android:key="students_major"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="@string/pref_title_display_major" />
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:title="@string/pref_header_score"
+            android:key="Student_score">
+            <EditTextPreference
+                android:defaultValue="0"
+                android:key="score"
+                android:title="@string/pref_title_display_studentScore"/>
+            <ListPreference
+                android:defaultValue="0"
+                android:entries="@array/pref_score_reward"
+                android:entryValues="@array/pref_score_reward_values"
+                android:key="sync_frequency"
+                android:negativeButtonText="@null"
+                android:positiveButtonText="@null"
+                android:title="@string/pref_title_score_rewards" />
+        </PreferenceCategory>
+</PreferenceScreen>

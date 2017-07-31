@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:background="@drawable/bound"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:text="活动类型"
+            android:textSize="10dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/et_act"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:text="主办人："
+            android:gravity="center"
+            android:textSize="10dp"
+            android:layout_weight="0.16" />
+        <TextView
+            android:id="@+id/et_host"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.34"
+            android:ems="10"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:text="举行时间" />
+
+        <TextView
+            android:id="@+id/et_time"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:padding="3dp"
+        android:background="@drawable/bound"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="65dp"
+            android:layout_height="79dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/content"
+                android:gravity="center"
+                android:text="详细情况" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/et_details"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:ems="10"
+            android:text="意见与建议"
+            android:background="@drawable/bound"
+            android:gravity="center"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bound"
+        android:padding="3dp"
+        android:weightSum="1"
+        android:layout_weight="0.03">
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:text="参与人数"
+            android:textSize="10dp"
+            android:layout_weight="0.21"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/et_number"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="20dp"
+            android:layout_weight="0.13" />
+
+        <Button
+            android:id="@+id/btn_join"
+            android:layout_width="91dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/sign_up"
+            android:focusable="false"
+            android:clickable="false"
+            android:focusableInTouchMode="false"/>
+    </LinearLayout>
+
+</LinearLayout>

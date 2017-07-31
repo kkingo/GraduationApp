@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bound"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:text="类别："
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/et_cate"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.29"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_gravity="center"
+            android:textSize="15dp"
+            android:text="报修" />
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:text="地点："
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/et_where"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.54"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_gravity="center"
+            android:textSize="15dp"
+            android:text="行知楼c座" />
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:text="物品："
+            android:gravity="center"
+            android:layout_weight="0.33" />
+        <TextView
+            android:id="@+id/et_thing"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="前门"
+            android:layout_gravity="center"
+            android:layout_weight="0.37"
+            android:textSize="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@drawable/bound"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="65dp"
+            android:layout_height="79dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/content"
+                android:gravity="center"
+                android:text="详细情况" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/et_condition"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:ems="10"
+            android:text="意见与建议"
+            android:gravity="center"
+            android:background="@drawable/bound"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@drawable/bound"
+
+        android:layout_weight="0.09">
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="center"
+            android:text="赞成人数"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:id="@+id/et_people"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="0"
+            />
+
+        <Button
+            android:id="@+id/btn_agree"
+            android:layout_width="49dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:focusable="false"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:background="@drawable/agree" />
+    </LinearLayout>
+
+</LinearLayout>
